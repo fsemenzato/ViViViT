@@ -1,4 +1,11 @@
 # ViViViT
-Video to Video Vision Transformer fro cosmological lightcone reconstruction
 
-_Full codebase and checkpoints coming soon!_
+Code for **ViViViT: a Video-to-Video Vision Transformer for Cosmological Lightcone Reconstruction**
+F. Semenzato, A. Raccanelli, M. Liguori
+
+_LLM-polihed version of the training and experiment setups (please reach out for any issue)_
+
+
+## Checkpoints
+
+The trained ViViViT and U-Net weights are attached to the [v1.0 release](../../releases/tag/v1.0)
