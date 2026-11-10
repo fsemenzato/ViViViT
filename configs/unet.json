@@ -1,0 +1,30 @@
+{
+  "run_name": "unet",
+  "output_base": "runs",
+  "preproc_video_dir": "data/train",
+  "model_type": "unet",
+  "in_channels": 1,
+  "out_channels": 1,
+  "GridSize": [
+    384,
+    128,
+    128
+  ],
+  "base_channels": 32,
+  "num_levels": 4,
+  "use_checkpoint_cnn": true,
+  "batch_size": 1,
+  "grad_accum_steps": 4,
+  "learning_rate": 0.0001,
+  "warmup_steps": 2000,
+  "num_epochs": 500,
+  "early_stopping_patience": 30,
+  "weight_decay": 0.05,
+  "test_indices": [
+    995,
+    996,
+    997,
+    998,
+    999
+  ]
+}

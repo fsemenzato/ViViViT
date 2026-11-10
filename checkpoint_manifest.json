@@ -1,0 +1,2376 @@
+[
+  {
+    "size": 415663992,
+    "keys": [
+      "model",
+      "config",
+      "epoch",
+      "val_loss"
+    ],
+    "state_shapes": {
+      "encoder_tokenizer.pos_embed_t": [
+        1,
+        96,
+        1,
+        1,
+        512
+      ],
+      "encoder_tokenizer.pos_embed_h": [
+        1,
+        1,
+        32,
+        1,
+        512
+      ],
+      "encoder_tokenizer.pos_embed_w": [
+        1,
+        1,
+        1,
+        32,
+        512
+      ],
+      "encoder_tokenizer.proj.weight": [
+        512,
+        1,
+        4,
+        6,
+        6
+      ],
+      "encoder_tokenizer.proj.bias": [
+        512
+      ],
+      "encoder_tokenizer.norm.weight": [
+        512
+      ],
+      "encoder_tokenizer.norm.bias": [
+        512
+      ],
+      "encoder_blocks.0.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.0.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.0.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.0.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.0.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.0.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.0.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.0.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.0.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.0.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.0.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.0.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.0.ff.norm.weight": [
+        512
+      ],
+      "encoder_blocks.0.ff.norm.bias": [
+        512
+      ],
+      "encoder_blocks.0.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "encoder_blocks.0.ff.fn.net.0.bias": [
+        2048
+      ],
+      "encoder_blocks.0.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "encoder_blocks.0.ff.fn.net.3.bias": [
+        512
+      ],
+      "encoder_blocks.1.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.1.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.1.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.1.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.1.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.1.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.1.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.1.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.1.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.1.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.1.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.1.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.1.ff.norm.weight": [
+        512
+      ],
+      "encoder_blocks.1.ff.norm.bias": [
+        512
+      ],
+      "encoder_blocks.1.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "encoder_blocks.1.ff.fn.net.0.bias": [
+        2048
+      ],
+      "encoder_blocks.1.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "encoder_blocks.1.ff.fn.net.3.bias": [
+        512
+      ],
+      "encoder_blocks.2.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.2.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.2.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.2.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.2.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.2.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.2.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.2.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.2.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.2.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.2.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.2.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.2.ff.norm.weight": [
+        512
+      ],
+      "encoder_blocks.2.ff.norm.bias": [
+        512
+      ],
+      "encoder_blocks.2.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "encoder_blocks.2.ff.fn.net.0.bias": [
+        2048
+      ],
+      "encoder_blocks.2.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "encoder_blocks.2.ff.fn.net.3.bias": [
+        512
+      ],
+      "encoder_blocks.3.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.3.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.3.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.3.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.3.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.3.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.3.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.3.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.3.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.3.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.3.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.3.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.3.ff.norm.weight": [
+        512
+      ],
+      "encoder_blocks.3.ff.norm.bias": [
+        512
+      ],
+      "encoder_blocks.3.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "encoder_blocks.3.ff.fn.net.0.bias": [
+        2048
+      ],
+      "encoder_blocks.3.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "encoder_blocks.3.ff.fn.net.3.bias": [
+        512
+      ],
+      "encoder_blocks.4.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.4.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.4.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.4.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.4.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.4.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.4.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.4.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.4.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.4.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.4.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.4.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.4.ff.norm.weight": [
+        512
+      ],
+      "encoder_blocks.4.ff.norm.bias": [
+        512
+      ],
+      "encoder_blocks.4.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "encoder_blocks.4.ff.fn.net.0.bias": [
+        2048
+      ],
+      "encoder_blocks.4.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "encoder_blocks.4.ff.fn.net.3.bias": [
+        512
+      ],
+      "encoder_blocks.5.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.5.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.5.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.5.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.5.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.5.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.5.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "encoder_blocks.5.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "encoder_blocks.5.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.5.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "encoder_blocks.5.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "encoder_blocks.5.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "encoder_blocks.5.ff.norm.weight": [
+        512
+      ],
+      "encoder_blocks.5.ff.norm.bias": [
+        512
+      ],
+      "encoder_blocks.5.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "encoder_blocks.5.ff.fn.net.0.bias": [
+        2048
+      ],
+      "encoder_blocks.5.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "encoder_blocks.5.ff.fn.net.3.bias": [
+        512
+      ],
+      "decoder_init.0.weight": [
+        512
+      ],
+      "decoder_init.0.bias": [
+        512
+      ],
+      "decoder_init.1.weight": [
+        1024,
+        512
+      ],
+      "decoder_init.1.bias": [
+        1024
+      ],
+      "decoder_init.3.weight": [
+        1024,
+        1024
+      ],
+      "decoder_init.3.bias": [
+        1024
+      ],
+      "decoder_init.5.weight": [
+        512,
+        1024
+      ],
+      "decoder_init.5.bias": [
+        512
+      ],
+      "decoder_blocks.0.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.0.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.0.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.0.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.0.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.0.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.0.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.0.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.0.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.0.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.0.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.0.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.0.spatial_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.0.spatial_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.0.spatial_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.0.spatial_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.0.spatial_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.0.spatial_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.0.temporal_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.0.temporal_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.0.temporal_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.0.temporal_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.0.temporal_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.0.temporal_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.0.ff.norm.weight": [
+        512
+      ],
+      "decoder_blocks.0.ff.norm.bias": [
+        512
+      ],
+      "decoder_blocks.0.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "decoder_blocks.0.ff.fn.net.0.bias": [
+        2048
+      ],
+      "decoder_blocks.0.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "decoder_blocks.0.ff.fn.net.3.bias": [
+        512
+      ],
+      "decoder_blocks.1.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.1.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.1.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.1.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.1.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.1.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.1.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.1.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.1.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.1.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.1.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.1.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.1.spatial_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.1.spatial_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.1.spatial_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.1.spatial_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.1.spatial_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.1.spatial_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.1.temporal_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.1.temporal_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.1.temporal_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.1.temporal_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.1.temporal_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.1.temporal_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.1.ff.norm.weight": [
+        512
+      ],
+      "decoder_blocks.1.ff.norm.bias": [
+        512
+      ],
+      "decoder_blocks.1.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "decoder_blocks.1.ff.fn.net.0.bias": [
+        2048
+      ],
+      "decoder_blocks.1.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "decoder_blocks.1.ff.fn.net.3.bias": [
+        512
+      ],
+      "decoder_blocks.2.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.2.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.2.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.2.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.2.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.2.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.2.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.2.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.2.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.2.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.2.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.2.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.2.spatial_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.2.spatial_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.2.spatial_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.2.spatial_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.2.spatial_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.2.spatial_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.2.temporal_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.2.temporal_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.2.temporal_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.2.temporal_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.2.temporal_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.2.temporal_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.2.ff.norm.weight": [
+        512
+      ],
+      "decoder_blocks.2.ff.norm.bias": [
+        512
+      ],
+      "decoder_blocks.2.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "decoder_blocks.2.ff.fn.net.0.bias": [
+        2048
+      ],
+      "decoder_blocks.2.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "decoder_blocks.2.ff.fn.net.3.bias": [
+        512
+      ],
+      "decoder_blocks.3.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.3.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.3.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.3.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.3.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.3.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.3.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.3.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.3.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.3.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.3.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.3.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.3.spatial_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.3.spatial_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.3.spatial_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.3.spatial_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.3.spatial_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.3.spatial_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.3.temporal_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.3.temporal_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.3.temporal_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.3.temporal_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.3.temporal_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.3.temporal_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.3.ff.norm.weight": [
+        512
+      ],
+      "decoder_blocks.3.ff.norm.bias": [
+        512
+      ],
+      "decoder_blocks.3.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "decoder_blocks.3.ff.fn.net.0.bias": [
+        2048
+      ],
+      "decoder_blocks.3.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "decoder_blocks.3.ff.fn.net.3.bias": [
+        512
+      ],
+      "decoder_blocks.4.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.4.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.4.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.4.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.4.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.4.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.4.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.4.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.4.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.4.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.4.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.4.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.4.spatial_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.4.spatial_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.4.spatial_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.4.spatial_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.4.spatial_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.4.spatial_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.4.temporal_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.4.temporal_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.4.temporal_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.4.temporal_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.4.temporal_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.4.temporal_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.4.ff.norm.weight": [
+        512
+      ],
+      "decoder_blocks.4.ff.norm.bias": [
+        512
+      ],
+      "decoder_blocks.4.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "decoder_blocks.4.ff.fn.net.0.bias": [
+        2048
+      ],
+      "decoder_blocks.4.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "decoder_blocks.4.ff.fn.net.3.bias": [
+        512
+      ],
+      "decoder_blocks.5.spatial_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.5.spatial_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.5.spatial_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.5.spatial_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.5.spatial_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.5.spatial_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.5.temporal_self_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.5.temporal_self_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.5.temporal_self_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.5.temporal_self_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.5.temporal_self_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.5.temporal_self_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.5.spatial_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.5.spatial_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.5.spatial_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.5.spatial_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.5.spatial_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.5.spatial_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.5.temporal_cross_attn.norm.weight": [
+        512
+      ],
+      "decoder_blocks.5.temporal_cross_attn.norm.bias": [
+        512
+      ],
+      "decoder_blocks.5.temporal_cross_attn.fn.to_q.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.5.temporal_cross_attn.fn.to_kv.weight": [
+        1024,
+        512
+      ],
+      "decoder_blocks.5.temporal_cross_attn.fn.to_out.0.weight": [
+        512,
+        512
+      ],
+      "decoder_blocks.5.temporal_cross_attn.fn.to_out.0.bias": [
+        512
+      ],
+      "decoder_blocks.5.ff.norm.weight": [
+        512
+      ],
+      "decoder_blocks.5.ff.norm.bias": [
+        512
+      ],
+      "decoder_blocks.5.ff.fn.net.0.weight": [
+        2048,
+        512
+      ],
+      "decoder_blocks.5.ff.fn.net.0.bias": [
+        2048
+      ],
+      "decoder_blocks.5.ff.fn.net.3.weight": [
+        512,
+        2048
+      ],
+      "decoder_blocks.5.ff.fn.net.3.bias": [
+        512
+      ],
+      "token_decoder.to_features.0.weight": [
+        512
+      ],
+      "token_decoder.to_features.0.bias": [
+        512
+      ],
+      "token_decoder.to_features.1.weight": [
+        256,
+        512
+      ],
+      "token_decoder.to_features.1.bias": [
+        256
+      ],
+      "token_decoder.to_features.3.weight": [
+        256,
+        256
+      ],
+      "token_decoder.to_features.3.bias": [
+        256
+      ],
+      "token_decoder.pre_mixing.0.conv.weight": [
+        256,
+        256,
+        5,
+        5,
+        5
+      ],
+      "token_decoder.pre_mixing.0.conv.bias": [
+        256
+      ],
+      "token_decoder.pre_mixing.2.conv1.conv.weight": [
+        256,
+        256,
+        5,
+        5,
+        5
+      ],
+      "token_decoder.pre_mixing.2.conv1.conv.bias": [
+        256
+      ],
+      "token_decoder.pre_mixing.2.conv2.conv.weight": [
+        256,
+        256,
+        5,
+        5,
+        5
+      ],
+      "token_decoder.pre_mixing.2.conv2.conv.bias": [
+        256
+      ],
+      "token_decoder.pre_mixing.2.norm1.weight": [
+        256
+      ],
+      "token_decoder.pre_mixing.2.norm1.bias": [
+        256
+      ],
+      "token_decoder.pre_mixing.2.norm2.weight": [
+        256
+      ],
+      "token_decoder.pre_mixing.2.norm2.bias": [
+        256
+      ],
+      "token_decoder.pre_mixing.3.conv1.conv.weight": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.pre_mixing.3.conv1.conv.bias": [
+        256
+      ],
+      "token_decoder.pre_mixing.3.conv2.conv.weight": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.pre_mixing.3.conv2.conv.bias": [
+        256
+      ],
+      "token_decoder.pre_mixing.3.norm1.weight": [
+        256
+      ],
+      "token_decoder.pre_mixing.3.norm1.bias": [
+        256
+      ],
+      "token_decoder.pre_mixing.3.norm2.weight": [
+        256
+      ],
+      "token_decoder.pre_mixing.3.norm2.bias": [
+        256
+      ],
+      "token_decoder.upsample_stages.0.0.conv.weight": [
+        1024,
+        256,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.upsample_stages.0.0.conv.bias": [
+        1024
+      ],
+      "token_decoder.upsample_stages.0.3.conv1.conv.weight": [
+        128,
+        128,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.upsample_stages.0.3.conv1.conv.bias": [
+        128
+      ],
+      "token_decoder.upsample_stages.0.3.conv2.conv.weight": [
+        128,
+        128,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.upsample_stages.0.3.conv2.conv.bias": [
+        128
+      ],
+      "token_decoder.upsample_stages.0.3.norm1.weight": [
+        128
+      ],
+      "token_decoder.upsample_stages.0.3.norm1.bias": [
+        128
+      ],
+      "token_decoder.upsample_stages.0.3.norm2.weight": [
+        128
+      ],
+      "token_decoder.upsample_stages.0.3.norm2.bias": [
+        128
+      ],
+      "token_decoder.upsample_stages.1.0.conv.weight": [
+        512,
+        128,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.upsample_stages.1.0.conv.bias": [
+        512
+      ],
+      "token_decoder.upsample_stages.1.3.conv1.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.upsample_stages.1.3.conv1.conv.bias": [
+        64
+      ],
+      "token_decoder.upsample_stages.1.3.conv2.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.upsample_stages.1.3.conv2.conv.bias": [
+        64
+      ],
+      "token_decoder.upsample_stages.1.3.norm1.weight": [
+        64
+      ],
+      "token_decoder.upsample_stages.1.3.norm1.bias": [
+        64
+      ],
+      "token_decoder.upsample_stages.1.3.norm2.weight": [
+        64
+      ],
+      "token_decoder.upsample_stages.1.3.norm2.bias": [
+        64
+      ],
+      "token_decoder.final.0.conv1.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.final.0.conv1.conv.bias": [
+        64
+      ],
+      "token_decoder.final.0.conv2.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.final.0.conv2.conv.bias": [
+        64
+      ],
+      "token_decoder.final.0.norm1.weight": [
+        64
+      ],
+      "token_decoder.final.0.norm1.bias": [
+        64
+      ],
+      "token_decoder.final.0.norm2.weight": [
+        64
+      ],
+      "token_decoder.final.0.norm2.bias": [
+        64
+      ],
+      "token_decoder.final.1.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.final.1.conv.bias": [
+        64
+      ],
+      "token_decoder.final.3.conv.weight": [
+        1,
+        64,
+        3,
+        3,
+        3
+      ],
+      "token_decoder.final.3.conv.bias": [
+        1
+      ]
+    },
+    "state_dtypes": {
+      "encoder_tokenizer.pos_embed_t": "torch.float32",
+      "encoder_tokenizer.pos_embed_h": "torch.float32",
+      "encoder_tokenizer.pos_embed_w": "torch.float32",
+      "encoder_tokenizer.proj.weight": "torch.float32",
+      "encoder_tokenizer.proj.bias": "torch.float32",
+      "encoder_tokenizer.norm.weight": "torch.float32",
+      "encoder_tokenizer.norm.bias": "torch.float32",
+      "encoder_blocks.0.spatial_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.0.spatial_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.0.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.0.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.0.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.0.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.0.temporal_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.0.temporal_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.0.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.0.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.0.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.0.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.0.ff.norm.weight": "torch.float32",
+      "encoder_blocks.0.ff.norm.bias": "torch.float32",
+      "encoder_blocks.0.ff.fn.net.0.weight": "torch.float32",
+      "encoder_blocks.0.ff.fn.net.0.bias": "torch.float32",
+      "encoder_blocks.0.ff.fn.net.3.weight": "torch.float32",
+      "encoder_blocks.0.ff.fn.net.3.bias": "torch.float32",
+      "encoder_blocks.1.spatial_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.1.spatial_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.1.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.1.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.1.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.1.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.1.temporal_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.1.temporal_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.1.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.1.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.1.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.1.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.1.ff.norm.weight": "torch.float32",
+      "encoder_blocks.1.ff.norm.bias": "torch.float32",
+      "encoder_blocks.1.ff.fn.net.0.weight": "torch.float32",
+      "encoder_blocks.1.ff.fn.net.0.bias": "torch.float32",
+      "encoder_blocks.1.ff.fn.net.3.weight": "torch.float32",
+      "encoder_blocks.1.ff.fn.net.3.bias": "torch.float32",
+      "encoder_blocks.2.spatial_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.2.spatial_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.2.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.2.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.2.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.2.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.2.temporal_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.2.temporal_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.2.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.2.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.2.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.2.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.2.ff.norm.weight": "torch.float32",
+      "encoder_blocks.2.ff.norm.bias": "torch.float32",
+      "encoder_blocks.2.ff.fn.net.0.weight": "torch.float32",
+      "encoder_blocks.2.ff.fn.net.0.bias": "torch.float32",
+      "encoder_blocks.2.ff.fn.net.3.weight": "torch.float32",
+      "encoder_blocks.2.ff.fn.net.3.bias": "torch.float32",
+      "encoder_blocks.3.spatial_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.3.spatial_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.3.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.3.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.3.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.3.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.3.temporal_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.3.temporal_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.3.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.3.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.3.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.3.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.3.ff.norm.weight": "torch.float32",
+      "encoder_blocks.3.ff.norm.bias": "torch.float32",
+      "encoder_blocks.3.ff.fn.net.0.weight": "torch.float32",
+      "encoder_blocks.3.ff.fn.net.0.bias": "torch.float32",
+      "encoder_blocks.3.ff.fn.net.3.weight": "torch.float32",
+      "encoder_blocks.3.ff.fn.net.3.bias": "torch.float32",
+      "encoder_blocks.4.spatial_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.4.spatial_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.4.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.4.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.4.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.4.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.4.temporal_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.4.temporal_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.4.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.4.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.4.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.4.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.4.ff.norm.weight": "torch.float32",
+      "encoder_blocks.4.ff.norm.bias": "torch.float32",
+      "encoder_blocks.4.ff.fn.net.0.weight": "torch.float32",
+      "encoder_blocks.4.ff.fn.net.0.bias": "torch.float32",
+      "encoder_blocks.4.ff.fn.net.3.weight": "torch.float32",
+      "encoder_blocks.4.ff.fn.net.3.bias": "torch.float32",
+      "encoder_blocks.5.spatial_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.5.spatial_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.5.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.5.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.5.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.5.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.5.temporal_self_attn.norm.weight": "torch.float32",
+      "encoder_blocks.5.temporal_self_attn.norm.bias": "torch.float32",
+      "encoder_blocks.5.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "encoder_blocks.5.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "encoder_blocks.5.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "encoder_blocks.5.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "encoder_blocks.5.ff.norm.weight": "torch.float32",
+      "encoder_blocks.5.ff.norm.bias": "torch.float32",
+      "encoder_blocks.5.ff.fn.net.0.weight": "torch.float32",
+      "encoder_blocks.5.ff.fn.net.0.bias": "torch.float32",
+      "encoder_blocks.5.ff.fn.net.3.weight": "torch.float32",
+      "encoder_blocks.5.ff.fn.net.3.bias": "torch.float32",
+      "decoder_init.0.weight": "torch.float32",
+      "decoder_init.0.bias": "torch.float32",
+      "decoder_init.1.weight": "torch.float32",
+      "decoder_init.1.bias": "torch.float32",
+      "decoder_init.3.weight": "torch.float32",
+      "decoder_init.3.bias": "torch.float32",
+      "decoder_init.5.weight": "torch.float32",
+      "decoder_init.5.bias": "torch.float32",
+      "decoder_blocks.0.spatial_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.0.spatial_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.0.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.0.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.0.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.0.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.0.temporal_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.0.temporal_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.0.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.0.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.0.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.0.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.0.spatial_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.0.spatial_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.0.spatial_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.0.spatial_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.0.spatial_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.0.spatial_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.0.temporal_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.0.temporal_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.0.temporal_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.0.temporal_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.0.temporal_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.0.temporal_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.0.ff.norm.weight": "torch.float32",
+      "decoder_blocks.0.ff.norm.bias": "torch.float32",
+      "decoder_blocks.0.ff.fn.net.0.weight": "torch.float32",
+      "decoder_blocks.0.ff.fn.net.0.bias": "torch.float32",
+      "decoder_blocks.0.ff.fn.net.3.weight": "torch.float32",
+      "decoder_blocks.0.ff.fn.net.3.bias": "torch.float32",
+      "decoder_blocks.1.spatial_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.1.spatial_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.1.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.1.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.1.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.1.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.1.temporal_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.1.temporal_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.1.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.1.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.1.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.1.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.1.spatial_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.1.spatial_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.1.spatial_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.1.spatial_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.1.spatial_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.1.spatial_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.1.temporal_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.1.temporal_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.1.temporal_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.1.temporal_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.1.temporal_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.1.temporal_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.1.ff.norm.weight": "torch.float32",
+      "decoder_blocks.1.ff.norm.bias": "torch.float32",
+      "decoder_blocks.1.ff.fn.net.0.weight": "torch.float32",
+      "decoder_blocks.1.ff.fn.net.0.bias": "torch.float32",
+      "decoder_blocks.1.ff.fn.net.3.weight": "torch.float32",
+      "decoder_blocks.1.ff.fn.net.3.bias": "torch.float32",
+      "decoder_blocks.2.spatial_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.2.spatial_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.2.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.2.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.2.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.2.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.2.temporal_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.2.temporal_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.2.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.2.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.2.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.2.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.2.spatial_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.2.spatial_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.2.spatial_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.2.spatial_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.2.spatial_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.2.spatial_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.2.temporal_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.2.temporal_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.2.temporal_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.2.temporal_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.2.temporal_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.2.temporal_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.2.ff.norm.weight": "torch.float32",
+      "decoder_blocks.2.ff.norm.bias": "torch.float32",
+      "decoder_blocks.2.ff.fn.net.0.weight": "torch.float32",
+      "decoder_blocks.2.ff.fn.net.0.bias": "torch.float32",
+      "decoder_blocks.2.ff.fn.net.3.weight": "torch.float32",
+      "decoder_blocks.2.ff.fn.net.3.bias": "torch.float32",
+      "decoder_blocks.3.spatial_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.3.spatial_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.3.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.3.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.3.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.3.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.3.temporal_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.3.temporal_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.3.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.3.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.3.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.3.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.3.spatial_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.3.spatial_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.3.spatial_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.3.spatial_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.3.spatial_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.3.spatial_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.3.temporal_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.3.temporal_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.3.temporal_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.3.temporal_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.3.temporal_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.3.temporal_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.3.ff.norm.weight": "torch.float32",
+      "decoder_blocks.3.ff.norm.bias": "torch.float32",
+      "decoder_blocks.3.ff.fn.net.0.weight": "torch.float32",
+      "decoder_blocks.3.ff.fn.net.0.bias": "torch.float32",
+      "decoder_blocks.3.ff.fn.net.3.weight": "torch.float32",
+      "decoder_blocks.3.ff.fn.net.3.bias": "torch.float32",
+      "decoder_blocks.4.spatial_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.4.spatial_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.4.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.4.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.4.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.4.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.4.temporal_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.4.temporal_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.4.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.4.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.4.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.4.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.4.spatial_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.4.spatial_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.4.spatial_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.4.spatial_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.4.spatial_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.4.spatial_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.4.temporal_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.4.temporal_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.4.temporal_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.4.temporal_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.4.temporal_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.4.temporal_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.4.ff.norm.weight": "torch.float32",
+      "decoder_blocks.4.ff.norm.bias": "torch.float32",
+      "decoder_blocks.4.ff.fn.net.0.weight": "torch.float32",
+      "decoder_blocks.4.ff.fn.net.0.bias": "torch.float32",
+      "decoder_blocks.4.ff.fn.net.3.weight": "torch.float32",
+      "decoder_blocks.4.ff.fn.net.3.bias": "torch.float32",
+      "decoder_blocks.5.spatial_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.5.spatial_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.5.spatial_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.5.spatial_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.5.spatial_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.5.spatial_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.5.temporal_self_attn.norm.weight": "torch.float32",
+      "decoder_blocks.5.temporal_self_attn.norm.bias": "torch.float32",
+      "decoder_blocks.5.temporal_self_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.5.temporal_self_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.5.temporal_self_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.5.temporal_self_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.5.spatial_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.5.spatial_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.5.spatial_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.5.spatial_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.5.spatial_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.5.spatial_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.5.temporal_cross_attn.norm.weight": "torch.float32",
+      "decoder_blocks.5.temporal_cross_attn.norm.bias": "torch.float32",
+      "decoder_blocks.5.temporal_cross_attn.fn.to_q.weight": "torch.float32",
+      "decoder_blocks.5.temporal_cross_attn.fn.to_kv.weight": "torch.float32",
+      "decoder_blocks.5.temporal_cross_attn.fn.to_out.0.weight": "torch.float32",
+      "decoder_blocks.5.temporal_cross_attn.fn.to_out.0.bias": "torch.float32",
+      "decoder_blocks.5.ff.norm.weight": "torch.float32",
+      "decoder_blocks.5.ff.norm.bias": "torch.float32",
+      "decoder_blocks.5.ff.fn.net.0.weight": "torch.float32",
+      "decoder_blocks.5.ff.fn.net.0.bias": "torch.float32",
+      "decoder_blocks.5.ff.fn.net.3.weight": "torch.float32",
+      "decoder_blocks.5.ff.fn.net.3.bias": "torch.float32",
+      "token_decoder.to_features.0.weight": "torch.float32",
+      "token_decoder.to_features.0.bias": "torch.float32",
+      "token_decoder.to_features.1.weight": "torch.float32",
+      "token_decoder.to_features.1.bias": "torch.float32",
+      "token_decoder.to_features.3.weight": "torch.float32",
+      "token_decoder.to_features.3.bias": "torch.float32",
+      "token_decoder.pre_mixing.0.conv.weight": "torch.float32",
+      "token_decoder.pre_mixing.0.conv.bias": "torch.float32",
+      "token_decoder.pre_mixing.2.conv1.conv.weight": "torch.float32",
+      "token_decoder.pre_mixing.2.conv1.conv.bias": "torch.float32",
+      "token_decoder.pre_mixing.2.conv2.conv.weight": "torch.float32",
+      "token_decoder.pre_mixing.2.conv2.conv.bias": "torch.float32",
+      "token_decoder.pre_mixing.2.norm1.weight": "torch.float32",
+      "token_decoder.pre_mixing.2.norm1.bias": "torch.float32",
+      "token_decoder.pre_mixing.2.norm2.weight": "torch.float32",
+      "token_decoder.pre_mixing.2.norm2.bias": "torch.float32",
+      "token_decoder.pre_mixing.3.conv1.conv.weight": "torch.float32",
+      "token_decoder.pre_mixing.3.conv1.conv.bias": "torch.float32",
+      "token_decoder.pre_mixing.3.conv2.conv.weight": "torch.float32",
+      "token_decoder.pre_mixing.3.conv2.conv.bias": "torch.float32",
+      "token_decoder.pre_mixing.3.norm1.weight": "torch.float32",
+      "token_decoder.pre_mixing.3.norm1.bias": "torch.float32",
+      "token_decoder.pre_mixing.3.norm2.weight": "torch.float32",
+      "token_decoder.pre_mixing.3.norm2.bias": "torch.float32",
+      "token_decoder.upsample_stages.0.0.conv.weight": "torch.float32",
+      "token_decoder.upsample_stages.0.0.conv.bias": "torch.float32",
+      "token_decoder.upsample_stages.0.3.conv1.conv.weight": "torch.float32",
+      "token_decoder.upsample_stages.0.3.conv1.conv.bias": "torch.float32",
+      "token_decoder.upsample_stages.0.3.conv2.conv.weight": "torch.float32",
+      "token_decoder.upsample_stages.0.3.conv2.conv.bias": "torch.float32",
+      "token_decoder.upsample_stages.0.3.norm1.weight": "torch.float32",
+      "token_decoder.upsample_stages.0.3.norm1.bias": "torch.float32",
+      "token_decoder.upsample_stages.0.3.norm2.weight": "torch.float32",
+      "token_decoder.upsample_stages.0.3.norm2.bias": "torch.float32",
+      "token_decoder.upsample_stages.1.0.conv.weight": "torch.float32",
+      "token_decoder.upsample_stages.1.0.conv.bias": "torch.float32",
+      "token_decoder.upsample_stages.1.3.conv1.conv.weight": "torch.float32",
+      "token_decoder.upsample_stages.1.3.conv1.conv.bias": "torch.float32",
+      "token_decoder.upsample_stages.1.3.conv2.conv.weight": "torch.float32",
+      "token_decoder.upsample_stages.1.3.conv2.conv.bias": "torch.float32",
+      "token_decoder.upsample_stages.1.3.norm1.weight": "torch.float32",
+      "token_decoder.upsample_stages.1.3.norm1.bias": "torch.float32",
+      "token_decoder.upsample_stages.1.3.norm2.weight": "torch.float32",
+      "token_decoder.upsample_stages.1.3.norm2.bias": "torch.float32",
+      "token_decoder.final.0.conv1.conv.weight": "torch.float32",
+      "token_decoder.final.0.conv1.conv.bias": "torch.float32",
+      "token_decoder.final.0.conv2.conv.weight": "torch.float32",
+      "token_decoder.final.0.conv2.conv.bias": "torch.float32",
+      "token_decoder.final.0.norm1.weight": "torch.float32",
+      "token_decoder.final.0.norm1.bias": "torch.float32",
+      "token_decoder.final.0.norm2.weight": "torch.float32",
+      "token_decoder.final.0.norm2.bias": "torch.float32",
+      "token_decoder.final.1.conv.weight": "torch.float32",
+      "token_decoder.final.1.conv.bias": "torch.float32",
+      "token_decoder.final.3.conv.weight": "torch.float32",
+      "token_decoder.final.3.conv.bias": "torch.float32"
+    },
+    "num_state_elements": 103877121,
+    "epoch": 260,
+    "val_loss": 0.069593296775335,
+    "config": {
+      "run_name": "vivit",
+      "output_base": "runs",
+      "preproc_video_dir": "data/train",
+      "model_type": "vivit_overlap",
+      "in_channels": 1,
+      "out_channels": 1,
+      "GridSize": [
+        384,
+        128,
+        128
+      ],
+      "BoxSize": [
+        384.0,
+        128.0,
+        128.0
+      ],
+      "bottleneck_type": "mlp_init",
+      "_comment_batch": "FAIR COMPARISON: All models use effective batch size = 8",
+      "batch_size": 1,
+      "grad_accum_steps": 4,
+      "_comment_lr": "FAIR COMPARISON: All models use same LR and warmup",
+      "learning_rate": 0.0001,
+      "warmup_steps": 2000,
+      "num_epochs": 500,
+      "early_stopping_patience": 30,
+      "weight_decay": 0.05,
+      "_comment_vivit": "Pure transformer architecture",
+      "embed_dim": 512,
+      "encoder_depth": 6,
+      "decoder_depth": 6,
+      "heads": 8,
+      "mlp_dim": 2048,
+      "temporal_patch_size": 4,
+      "spatial_patch_size": 4,
+      "use_checkpointing": true,
+      "_comment_loss": "SIMPLIFIED: Only pixel + gradient loss",
+      "loss_type": "simple",
+      "lambda_gdl": 1.0,
+      "_comment_test": "RESERVED TEST INDICES (same as others!)",
+      "test_indices": [
+        995,
+        996,
+        997,
+        998,
+        999
+      ],
+      "input_mean": -27.748535562602243,
+      "input_std": 32.77221536249675,
+      "target_mean": 1.8900871360619827e-06,
+      "target_std": 0.1548647947796961,
+      "target_means": [
+        1.8900871360619827e-06
+      ],
+      "target_stds": [
+        0.1548647947796961
+      ],
+      "num_target_channels": 1,
+      "canonical_shape": {
+        "T": 384,
+        "H": 128,
+        "W": 128
+      },
+      "note": "Scalar target_* refer to channel pk_channel for backward compat."
+    },
+    "sha256": "87b0c1999031fb8b92d48793a4d4785cc7e28b728bf3bdd5985f71c4ce5b1972"
+  },
+  {
+    "size": 148399293,
+    "keys": [
+      "model",
+      "config",
+      "epoch",
+      "val_loss"
+    ],
+    "state_shapes": {
+      "init_conv.conv1.weight": [
+        32,
+        1,
+        3,
+        3,
+        3
+      ],
+      "init_conv.conv1.bias": [
+        32
+      ],
+      "init_conv.norm1.weight": [
+        32
+      ],
+      "init_conv.norm1.bias": [
+        32
+      ],
+      "init_conv.conv2.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "init_conv.conv2.bias": [
+        32
+      ],
+      "init_conv.norm2.weight": [
+        32
+      ],
+      "init_conv.norm2.bias": [
+        32
+      ],
+      "init_conv.residual.weight": [
+        32,
+        1,
+        1,
+        1,
+        1
+      ],
+      "init_conv.residual.bias": [
+        32
+      ],
+      "encoder_blocks.0.conv1.weight": [
+        64,
+        32,
+        3,
+        3,
+        3
+      ],
+      "encoder_blocks.0.conv1.bias": [
+        64
+      ],
+      "encoder_blocks.0.norm1.weight": [
+        64
+      ],
+      "encoder_blocks.0.norm1.bias": [
+        64
+      ],
+      "encoder_blocks.0.conv2.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "encoder_blocks.0.conv2.bias": [
+        64
+      ],
+      "encoder_blocks.0.norm2.weight": [
+        64
+      ],
+      "encoder_blocks.0.norm2.bias": [
+        64
+      ],
+      "encoder_blocks.0.residual.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "encoder_blocks.0.residual.bias": [
+        64
+      ],
+      "encoder_blocks.1.conv1.weight": [
+        128,
+        64,
+        3,
+        3,
+        3
+      ],
+      "encoder_blocks.1.conv1.bias": [
+        128
+      ],
+      "encoder_blocks.1.norm1.weight": [
+        128
+      ],
+      "encoder_blocks.1.norm1.bias": [
+        128
+      ],
+      "encoder_blocks.1.conv2.weight": [
+        128,
+        128,
+        3,
+        3,
+        3
+      ],
+      "encoder_blocks.1.conv2.bias": [
+        128
+      ],
+      "encoder_blocks.1.norm2.weight": [
+        128
+      ],
+      "encoder_blocks.1.norm2.bias": [
+        128
+      ],
+      "encoder_blocks.1.residual.weight": [
+        128,
+        64,
+        1,
+        1,
+        1
+      ],
+      "encoder_blocks.1.residual.bias": [
+        128
+      ],
+      "encoder_blocks.2.conv1.weight": [
+        256,
+        128,
+        3,
+        3,
+        3
+      ],
+      "encoder_blocks.2.conv1.bias": [
+        256
+      ],
+      "encoder_blocks.2.norm1.weight": [
+        256
+      ],
+      "encoder_blocks.2.norm1.bias": [
+        256
+      ],
+      "encoder_blocks.2.conv2.weight": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "encoder_blocks.2.conv2.bias": [
+        256
+      ],
+      "encoder_blocks.2.norm2.weight": [
+        256
+      ],
+      "encoder_blocks.2.norm2.bias": [
+        256
+      ],
+      "encoder_blocks.2.residual.weight": [
+        256,
+        128,
+        1,
+        1,
+        1
+      ],
+      "encoder_blocks.2.residual.bias": [
+        256
+      ],
+      "encoder_blocks.3.conv1.weight": [
+        512,
+        256,
+        3,
+        3,
+        3
+      ],
+      "encoder_blocks.3.conv1.bias": [
+        512
+      ],
+      "encoder_blocks.3.norm1.weight": [
+        512
+      ],
+      "encoder_blocks.3.norm1.bias": [
+        512
+      ],
+      "encoder_blocks.3.conv2.weight": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "encoder_blocks.3.conv2.bias": [
+        512
+      ],
+      "encoder_blocks.3.norm2.weight": [
+        512
+      ],
+      "encoder_blocks.3.norm2.bias": [
+        512
+      ],
+      "encoder_blocks.3.residual.weight": [
+        512,
+        256,
+        1,
+        1,
+        1
+      ],
+      "encoder_blocks.3.residual.bias": [
+        512
+      ],
+      "bottleneck.conv1.weight": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "bottleneck.conv1.bias": [
+        512
+      ],
+      "bottleneck.norm1.weight": [
+        512
+      ],
+      "bottleneck.norm1.bias": [
+        512
+      ],
+      "bottleneck.conv2.weight": [
+        512,
+        512,
+        3,
+        3,
+        3
+      ],
+      "bottleneck.conv2.bias": [
+        512
+      ],
+      "bottleneck.norm2.weight": [
+        512
+      ],
+      "bottleneck.norm2.bias": [
+        512
+      ],
+      "upsamples.0.weight": [
+        512,
+        256,
+        2,
+        2,
+        2
+      ],
+      "upsamples.0.bias": [
+        256
+      ],
+      "upsamples.1.weight": [
+        256,
+        128,
+        2,
+        2,
+        2
+      ],
+      "upsamples.1.bias": [
+        128
+      ],
+      "upsamples.2.weight": [
+        128,
+        64,
+        2,
+        2,
+        2
+      ],
+      "upsamples.2.bias": [
+        64
+      ],
+      "upsamples.3.weight": [
+        64,
+        32,
+        2,
+        2,
+        2
+      ],
+      "upsamples.3.bias": [
+        32
+      ],
+      "decoder_blocks.0.conv1.weight": [
+        256,
+        512,
+        3,
+        3,
+        3
+      ],
+      "decoder_blocks.0.conv1.bias": [
+        256
+      ],
+      "decoder_blocks.0.norm1.weight": [
+        256
+      ],
+      "decoder_blocks.0.norm1.bias": [
+        256
+      ],
+      "decoder_blocks.0.conv2.weight": [
+        256,
+        256,
+        3,
+        3,
+        3
+      ],
+      "decoder_blocks.0.conv2.bias": [
+        256
+      ],
+      "decoder_blocks.0.norm2.weight": [
+        256
+      ],
+      "decoder_blocks.0.norm2.bias": [
+        256
+      ],
+      "decoder_blocks.0.residual.weight": [
+        256,
+        512,
+        1,
+        1,
+        1
+      ],
+      "decoder_blocks.0.residual.bias": [
+        256
+      ],
+      "decoder_blocks.1.conv1.weight": [
+        128,
+        256,
+        3,
+        3,
+        3
+      ],
+      "decoder_blocks.1.conv1.bias": [
+        128
+      ],
+      "decoder_blocks.1.norm1.weight": [
+        128
+      ],
+      "decoder_blocks.1.norm1.bias": [
+        128
+      ],
+      "decoder_blocks.1.conv2.weight": [
+        128,
+        128,
+        3,
+        3,
+        3
+      ],
+      "decoder_blocks.1.conv2.bias": [
+        128
+      ],
+      "decoder_blocks.1.norm2.weight": [
+        128
+      ],
+      "decoder_blocks.1.norm2.bias": [
+        128
+      ],
+      "decoder_blocks.1.residual.weight": [
+        128,
+        256,
+        1,
+        1,
+        1
+      ],
+      "decoder_blocks.1.residual.bias": [
+        128
+      ],
+      "decoder_blocks.2.conv1.weight": [
+        64,
+        128,
+        3,
+        3,
+        3
+      ],
+      "decoder_blocks.2.conv1.bias": [
+        64
+      ],
+      "decoder_blocks.2.norm1.weight": [
+        64
+      ],
+      "decoder_blocks.2.norm1.bias": [
+        64
+      ],
+      "decoder_blocks.2.conv2.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "decoder_blocks.2.conv2.bias": [
+        64
+      ],
+      "decoder_blocks.2.norm2.weight": [
+        64
+      ],
+      "decoder_blocks.2.norm2.bias": [
+        64
+      ],
+      "decoder_blocks.2.residual.weight": [
+        64,
+        128,
+        1,
+        1,
+        1
+      ],
+      "decoder_blocks.2.residual.bias": [
+        64
+      ],
+      "decoder_blocks.3.conv1.weight": [
+        32,
+        64,
+        3,
+        3,
+        3
+      ],
+      "decoder_blocks.3.conv1.bias": [
+        32
+      ],
+      "decoder_blocks.3.norm1.weight": [
+        32
+      ],
+      "decoder_blocks.3.norm1.bias": [
+        32
+      ],
+      "decoder_blocks.3.conv2.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "decoder_blocks.3.conv2.bias": [
+        32
+      ],
+      "decoder_blocks.3.norm2.weight": [
+        32
+      ],
+      "decoder_blocks.3.norm2.bias": [
+        32
+      ],
+      "decoder_blocks.3.residual.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "decoder_blocks.3.residual.bias": [
+        32
+      ],
+      "final_conv.weight": [
+        1,
+        32,
+        1,
+        1,
+        1
+      ],
+      "final_conv.bias": [
+        1
+      ]
+    },
+    "state_dtypes": {
+      "init_conv.conv1.weight": "torch.float32",
+      "init_conv.conv1.bias": "torch.float32",
+      "init_conv.norm1.weight": "torch.float32",
+      "init_conv.norm1.bias": "torch.float32",
+      "init_conv.conv2.weight": "torch.float32",
+      "init_conv.conv2.bias": "torch.float32",
+      "init_conv.norm2.weight": "torch.float32",
+      "init_conv.norm2.bias": "torch.float32",
+      "init_conv.residual.weight": "torch.float32",
+      "init_conv.residual.bias": "torch.float32",
+      "encoder_blocks.0.conv1.weight": "torch.float32",
+      "encoder_blocks.0.conv1.bias": "torch.float32",
+      "encoder_blocks.0.norm1.weight": "torch.float32",
+      "encoder_blocks.0.norm1.bias": "torch.float32",
+      "encoder_blocks.0.conv2.weight": "torch.float32",
+      "encoder_blocks.0.conv2.bias": "torch.float32",
+      "encoder_blocks.0.norm2.weight": "torch.float32",
+      "encoder_blocks.0.norm2.bias": "torch.float32",
+      "encoder_blocks.0.residual.weight": "torch.float32",
+      "encoder_blocks.0.residual.bias": "torch.float32",
+      "encoder_blocks.1.conv1.weight": "torch.float32",
+      "encoder_blocks.1.conv1.bias": "torch.float32",
+      "encoder_blocks.1.norm1.weight": "torch.float32",
+      "encoder_blocks.1.norm1.bias": "torch.float32",
+      "encoder_blocks.1.conv2.weight": "torch.float32",
+      "encoder_blocks.1.conv2.bias": "torch.float32",
+      "encoder_blocks.1.norm2.weight": "torch.float32",
+      "encoder_blocks.1.norm2.bias": "torch.float32",
+      "encoder_blocks.1.residual.weight": "torch.float32",
+      "encoder_blocks.1.residual.bias": "torch.float32",
+      "encoder_blocks.2.conv1.weight": "torch.float32",
+      "encoder_blocks.2.conv1.bias": "torch.float32",
+      "encoder_blocks.2.norm1.weight": "torch.float32",
+      "encoder_blocks.2.norm1.bias": "torch.float32",
+      "encoder_blocks.2.conv2.weight": "torch.float32",
+      "encoder_blocks.2.conv2.bias": "torch.float32",
+      "encoder_blocks.2.norm2.weight": "torch.float32",
+      "encoder_blocks.2.norm2.bias": "torch.float32",
+      "encoder_blocks.2.residual.weight": "torch.float32",
+      "encoder_blocks.2.residual.bias": "torch.float32",
+      "encoder_blocks.3.conv1.weight": "torch.float32",
+      "encoder_blocks.3.conv1.bias": "torch.float32",
+      "encoder_blocks.3.norm1.weight": "torch.float32",
+      "encoder_blocks.3.norm1.bias": "torch.float32",
+      "encoder_blocks.3.conv2.weight": "torch.float32",
+      "encoder_blocks.3.conv2.bias": "torch.float32",
+      "encoder_blocks.3.norm2.weight": "torch.float32",
+      "encoder_blocks.3.norm2.bias": "torch.float32",
+      "encoder_blocks.3.residual.weight": "torch.float32",
+      "encoder_blocks.3.residual.bias": "torch.float32",
+      "bottleneck.conv1.weight": "torch.float32",
+      "bottleneck.conv1.bias": "torch.float32",
+      "bottleneck.norm1.weight": "torch.float32",
+      "bottleneck.norm1.bias": "torch.float32",
+      "bottleneck.conv2.weight": "torch.float32",
+      "bottleneck.conv2.bias": "torch.float32",
+      "bottleneck.norm2.weight": "torch.float32",
+      "bottleneck.norm2.bias": "torch.float32",
+      "upsamples.0.weight": "torch.float32",
+      "upsamples.0.bias": "torch.float32",
+      "upsamples.1.weight": "torch.float32",
+      "upsamples.1.bias": "torch.float32",
+      "upsamples.2.weight": "torch.float32",
+      "upsamples.2.bias": "torch.float32",
+      "upsamples.3.weight": "torch.float32",
+      "upsamples.3.bias": "torch.float32",
+      "decoder_blocks.0.conv1.weight": "torch.float32",
+      "decoder_blocks.0.conv1.bias": "torch.float32",
+      "decoder_blocks.0.norm1.weight": "torch.float32",
+      "decoder_blocks.0.norm1.bias": "torch.float32",
+      "decoder_blocks.0.conv2.weight": "torch.float32",
+      "decoder_blocks.0.conv2.bias": "torch.float32",
+      "decoder_blocks.0.norm2.weight": "torch.float32",
+      "decoder_blocks.0.norm2.bias": "torch.float32",
+      "decoder_blocks.0.residual.weight": "torch.float32",
+      "decoder_blocks.0.residual.bias": "torch.float32",
+      "decoder_blocks.1.conv1.weight": "torch.float32",
+      "decoder_blocks.1.conv1.bias": "torch.float32",
+      "decoder_blocks.1.norm1.weight": "torch.float32",
+      "decoder_blocks.1.norm1.bias": "torch.float32",
+      "decoder_blocks.1.conv2.weight": "torch.float32",
+      "decoder_blocks.1.conv2.bias": "torch.float32",
+      "decoder_blocks.1.norm2.weight": "torch.float32",
+      "decoder_blocks.1.norm2.bias": "torch.float32",
+      "decoder_blocks.1.residual.weight": "torch.float32",
+      "decoder_blocks.1.residual.bias": "torch.float32",
+      "decoder_blocks.2.conv1.weight": "torch.float32",
+      "decoder_blocks.2.conv1.bias": "torch.float32",
+      "decoder_blocks.2.norm1.weight": "torch.float32",
+      "decoder_blocks.2.norm1.bias": "torch.float32",
+      "decoder_blocks.2.conv2.weight": "torch.float32",
+      "decoder_blocks.2.conv2.bias": "torch.float32",
+      "decoder_blocks.2.norm2.weight": "torch.float32",
+      "decoder_blocks.2.norm2.bias": "torch.float32",
+      "decoder_blocks.2.residual.weight": "torch.float32",
+      "decoder_blocks.2.residual.bias": "torch.float32",
+      "decoder_blocks.3.conv1.weight": "torch.float32",
+      "decoder_blocks.3.conv1.bias": "torch.float32",
+      "decoder_blocks.3.norm1.weight": "torch.float32",
+      "decoder_blocks.3.norm1.bias": "torch.float32",
+      "decoder_blocks.3.conv2.weight": "torch.float32",
+      "decoder_blocks.3.conv2.bias": "torch.float32",
+      "decoder_blocks.3.norm2.weight": "torch.float32",
+      "decoder_blocks.3.norm2.bias": "torch.float32",
+      "decoder_blocks.3.residual.weight": "torch.float32",
+      "decoder_blocks.3.residual.bias": "torch.float32",
+      "final_conv.weight": "torch.float32",
+      "final_conv.bias": "torch.float32"
+    },
+    "num_state_elements": 37089729,
+    "epoch": 409,
+    "val_loss": 0.22616161877595925,
+    "config": {
+      "run_name": "unet",
+      "output_base": "runs",
+      "preproc_video_dir": "data/train",
+      "model_type": "unet",
+      "in_channels": 1,
+      "out_channels": 1,
+      "GridSize": [
+        384,
+        128,
+        128
+      ],
+      "BoxSize": [
+        384.0,
+        128.0,
+        128.0
+      ],
+      "base_channels": 32,
+      "num_levels": 4,
+      "use_checkpoint_cnn": true,
+      "_comment_batch": "FAIR COMPARISON: All models use batch_size=1 + grad_accum=4 (matches ViViT)",
+      "batch_size": 1,
+      "grad_accum_steps": 4,
+      "_comment_lr": "FAIR COMPARISON: All models use same LR and warmup",
+      "learning_rate": 0.0001,
+      "warmup_steps": 2000,
+      "num_epochs": 500,
+      "early_stopping_patience": 30,
+      "weight_decay": 0.05,
+      "_comment_loss": "SIMPLIFIED: Only pixel + gradient loss",
+      "loss_type": "simple",
+      "lambda_gdl": 1.0,
+      "_comment_test": "RESERVED TEST INDICES",
+      "test_indices": [
+        995,
+        996,
+        997,
+        998,
+        999
+      ],
+      "input_mean": -27.748535562602243,
+      "input_std": 32.77221536249675,
+      "target_mean": 1.8900871360619827e-06,
+      "target_std": 0.1548647947796961,
+      "target_means": [
+        1.8900871360619827e-06
+      ],
+      "target_stds": [
+        0.1548647947796961
+      ],
+      "num_target_channels": 1,
+      "canonical_shape": {
+        "T": 384,
+        "H": 128,
+        "W": 128
+      },
+      "note": "Scalar target_* refer to channel pk_channel for backward compat."
+    },
+    "sha256": "131f3875c63d7ec583d6885e644b5386a947a5c7ab1cf3f084096c866bf5d9ce"
+  }
+]

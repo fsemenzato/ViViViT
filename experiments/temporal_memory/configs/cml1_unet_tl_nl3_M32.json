@@ -1,0 +1,29 @@
+{
+  "run_name": "cml1_unet_tl_nl3_M32",
+  "output_base": "runs/temporal",
+  "preproc_video_dir": "data/temporal/M32",
+  "model_type": "unet_tl",
+  "num_levels": 3,
+  "base_channels": 40,
+  "in_channels": 1,
+  "out_channels": 1,
+  "GridSize": [
+    256,
+    64,
+    64
+  ],
+  "batch_size": 2,
+  "grad_accum_steps": 4,
+  "learning_rate": 0.0001,
+  "warmup_steps": 1000,
+  "weight_decay": 0.05,
+  "num_epochs": 300,
+  "early_stopping_patience": 60,
+  "use_checkpointing": true,
+  "test_indices": [],
+  "seed": 1234,
+  "input_mean": 0.0,
+  "input_std": 1.0,
+  "target_mean": 0.0,
+  "target_std": 1.0
+}
